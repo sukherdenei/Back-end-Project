@@ -9,10 +9,11 @@ const register = (req, res) => {
   //Create new user _id
   const lastUser = users[users.length - 1];
   const userId = lastUser._id + 1;
+  newUser.createdAt = new Date();
+  newUser.updatedAt = new Date();
 
   //Create new user
   const newUser = { _id: userId, name, email, password, role };
-
   //Users add new user
   users.push(newUser);
   res.send("Хэрэглэгч амжилттай бүртгэгдлээ");
