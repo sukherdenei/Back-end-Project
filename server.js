@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser());
 // const cors = require("cors");
 // app.use(cors());
-const { register, login, getProfile } = require("./services/user.controller");
+const { register, login, getProfile } = require("./services/user.routes");
 // const { users } = require("./database/users-db");
 
 // User Routes
