@@ -13,8 +13,10 @@ const {
 } = require("./controllers/user.controller");
 // const { users } = require("./database/users-db");
 
+// User Routes
 app.post("/user/register", register);
 app.post("/user/login", login);
+app.get("/user", getProfile);
 
 app.delete("/user", (request, response) => {
   let { name } = request.body;
@@ -22,6 +24,10 @@ app.delete("/user", (request, response) => {
   // addUsers(request.body);
   users = newUsers;
   response.send("User succesfully deleted!");
+});
+
+app.listen(4000, () => {
+  console.log(`app is running on ${4000}`);
 });
 
 // put // oruulsna zasna
@@ -34,8 +40,3 @@ app.delete("/user", (request, response) => {
 //   edit.star = star;
 //   res.send("User edited");
 // });
-
-app.listen(4000, () => {
-  console.log(`app is running on ${4000}`);
-});
-app.get("/user", getProfile);

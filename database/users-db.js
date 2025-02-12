@@ -5,8 +5,8 @@ const users = [
     email: "bilguun@nestcore.mn",
     password: "1234",
     role: "customer",
-    createdAt: "2025/02/14",
-    updatedAt: "2025/04/04",
+    createdAt: "2021 - 02 - 12",
+    updatedAt: "2025 - 02 - 14",
   },
 ];
 

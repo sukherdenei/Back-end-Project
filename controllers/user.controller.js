@@ -15,7 +15,6 @@ const register = (req, res) => {
 
   //Users add new user
   users.push(newUser);
-
   res.send("Хэрэглэгч амжилттай бүртгэгдлээ");
 };
 
